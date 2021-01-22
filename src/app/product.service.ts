@@ -14,7 +14,7 @@ export class ProductService {
     return this._http.get(this._albumUrl).map((response)=><Album>response.json());
   }
   getProducts(){
-    this._http.get(this._productsUrl);
+   return this._http.get(this._productsUrl);
   }
 
 }
